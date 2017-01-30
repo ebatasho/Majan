@@ -1,0 +1,441 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".presentation.view.fragment.PointCalcFragment"
+                tools:showIn="@layout/activity_main">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="7"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/han_1_btn"
+            android:layout_column="1"
+            android:layout_row="1"
+            style="@android:style/Widget.Material.Light.Button.Small"
+            android:elevation="0dp"
+            android:fontFamily="sans-serif-medium"
+            />
+
+        <Button
+            android:text="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/han_2_btn"
+            android:layout_column="2"
+            android:layout_row="1"
+            style="@android:style/Widget.Material.Light.Button.Small"
+            android:elevation="0dp"
+            android:fontFamily="sans-serif-medium"
+            />
+
+        <Button
+            android:text="子"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ko_btn"
+            android:layout_column="3"
+            android:layout_row="0"
+            style="@android:style/Widget.Material.Light.Button.Small"
+            android:elevation="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_columnSpan="2"
+            />
+
+        <Button
+            android:text="4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/han_4_btn"
+            android:layout_column="4"
+            android:layout_row="1"
+            style="@android:style/Widget.Material.Light.Button.Small"
+            android:elevation="0dp"
+            android:fontFamily="sans-serif-medium"
+            />
+
+        <Button
+            android:text="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/han_3_btn"
+            android:layout_column="3"
+            android:layout_row="1"
+            style="@android:style/Widget.Material.Light.Button.Small"
+            android:elevation="0dp"
+            android:fontFamily="sans-serif-medium"
+            />
+
+        <Button
+            android:text="門前"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/menzen_btn"
+            android:layout_column="1"
+            android:layout_row="2"
+            style="@android:style/Widget.Material.Light.Button.Small"
+            android:elevation="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_columnSpan="2"
+            />
+
+        <Button
+            android:text="ツモ"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tsumo_btn"
+            android:layout_column="3"
+            android:layout_row="3"
+            style="@android:style/Widget.Material.Light.Button.Small"
+            android:elevation="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_columnSpan="2"
+            />
+
+        <Button
+            android:text="鳴き有り"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/nakiari_btn"
+            android:layout_column="3"
+            android:layout_row="2"
+            style="@android:style/Widget.Material.Light.Button.Small"
+            android:elevation="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_columnSpan="2"
+            />
+
+        <TextView
+            android:text="アガリ方"
+            android:layout_width="wrap_content"
+            android:layout_height="89dp"
+            android:id="@+id/textView14"
+            android:layout_rowSpan="2"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:text="親・子"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:layout_row="0"
+            android:layout_column="0"/>
+
+        <TextView
+            android:text="符"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mati_hu_text_view"
+            android:layout_row="4"
+            android:layout_column="6"
+            android:layout_gravity="right"/>
+
+        <TextView
+            android:text="符"
+            android:layout_width="wrap_content"
+            android:layout_height="89dp"
+            android:id="@+id/agari_hu_text_view"
+            android:layout_rowSpan="2"
+            android:layout_row="2"
+            android:layout_column="6"
+            android:gravity="center_vertical"
+            android:layout_gravity="right"
+            />
+
+        <TextView
+            android:text="親・子"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/oya_ko_textView"
+            android:layout_row="0"
+            android:layout_column="6"
+            android:layout_gravity="right"/>
+
+        <TextView
+            android:text="翻"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/han_text_view"
+            android:layout_row="1"
+            android:layout_column="6"
+            android:layout_gravity="right"/>
+
+        <Button
+            android:text="両面"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ryanmen_btn"
+            android:layout_column="1"
+            android:layout_row="4"
+            style="@android:style/Widget.Material.Light.Button.Small"
+            android:elevation="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="10sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shabo_btn"
+            android:layout_column="2"
+            android:layout_row="4"
+            style="@android:style/Widget.Material.Light.Button.Small"
+            android:elevation="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="10sp"
+            android:text="ｼｬﾎﾞ"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tanki_btn"
+            android:layout_column="5"
+            android:layout_row="4"
+            style="@android:style/Widget.Material.Light.Button.Small"
+            android:elevation="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="10sp"
+            android:text="単騎"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/kantyan_btn"
+            android:layout_column="3"
+            android:layout_row="4"
+            style="@android:style/Widget.Material.Light.Button.Small"
+            android:elevation="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="10sp"
+            android:text="嵌張"/>
+
+        <TextView
+            android:text="待ち"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView16"
+            android:layout_row="4"
+            android:layout_column="0"/>
+
+        <Button
+            android:text="ロン"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ron_btn"
+            android:layout_column="1"
+            android:layout_row="3"
+            style="@android:style/Widget.Material.Light.Button.Small"
+            android:elevation="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_columnSpan="2"
+            />
+
+        <Button
+            android:text="平和"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/pinhu_btn"
+            android:layout_column="1"
+            android:layout_row="5"
+            style="@android:style/Widget.Material.Light.Button.Small"
+            android:elevation="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_columnSpan="2"
+            />
+
+        <Button
+            android:text="七対子"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/titoi_btn"
+            android:layout_column="3"
+            android:layout_row="5"
+            style="@android:style/Widget.Material.Light.Button.Small"
+            android:elevation="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_columnSpan="2"
+            />
+
+        <TextView
+            android:text="符"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reigai_hu_text_view"
+            android:layout_row="5"
+            android:layout_column="6"
+            android:layout_gravity="right"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hoka_btn"
+            android:layout_column="5"
+            android:layout_row="5"
+            style="@android:style/Widget.Material.Light.Button.Small"
+            android:elevation="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="14sp"
+            android:text="他"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pentyan_btn"
+            android:layout_column="4"
+            android:layout_row="4"
+            style="@android:style/Widget.Material.Light.Button.Small"
+            android:elevation="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="10sp"
+            android:text="辺張"/>
+
+        <TextView
+            android:text="符"
+            android:layout_width="wrap_content"
+            android:layout_height="71dp"
+            android:id="@+id/kumiawase_hu_text_view"
+            android:layout_row="6"
+            android:layout_column="6"
+            android:layout_rowSpan="3"
+            android:gravity="center_vertical"
+            android:layout_gravity="right"/>
+
+        <TextView
+            android:text="雀頭"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView21"
+            android:layout_row="6"
+            android:layout_column="1"
+            android:layout_gravity="right"/>
+
+        <TextView
+            android:text="その他\n面子"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:id="@+id/textView22"
+            android:layout_row="7"
+            android:layout_column="1"
+            android:layout_gravity="right"
+            android:layout_rowSpan="2"
+            android:gravity="center_vertical"
+            android:textAlignment="center"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/head_spinner"
+            android:layout_row="6"
+            android:layout_column="2"
+            android:entries="@array/spinner_head_han_list"
+            android:layout_columnSpan="2"
+            android:spinnerMode="dialog"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mentsu_1_spinner"
+            android:layout_row="7"
+            android:layout_column="2"
+            android:entries="@array/spinner_mentsu_han_list"
+            android:layout_columnSpan="2"
+            android:spinnerMode="dialog"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mentsu_3_spinner"
+            android:layout_row="8"
+            android:layout_column="2"
+            android:entries="@array/spinner_mentsu_han_list"
+            android:layout_columnSpan="2"
+            android:spinnerMode="dialog"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mentsu_4_spinner"
+            android:layout_row="8"
+            android:layout_column="4"
+            android:entries="@array/spinner_mentsu_han_list"
+            android:layout_columnSpan="2"
+            android:spinnerMode="dialog"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mentsu_2_spinner"
+            android:layout_row="7"
+            android:layout_column="4"
+            android:entries="@array/spinner_mentsu_han_list"
+            android:layout_columnSpan="2"
+            android:spinnerMode="dialog"/>
+
+        <TextView
+            android:text="組み合わせ"
+            android:layout_width="wrap_content"
+            android:layout_height="71dp"
+            android:id="@+id/textView11"
+            android:layout_row="6"
+            android:layout_column="0"
+            android:layout_rowSpan="3"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:text="翻数"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView24"
+            android:layout_row="1"
+            android:layout_column="0"/>
+
+        <TextView
+            android:text="例外"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView19"
+            android:layout_row="5"
+            android:layout_column="0"/>
+
+        <Button
+            android:text="親"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/oya_btn"
+            android:layout_column="1"
+            android:layout_row="0"
+            style="@android:style/Widget.Material.Light.Button.Small"
+            android:elevation="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_columnSpan="2"
+            tools:ignore="HardcodedText"/>
+
+
+    </GridLayout>
+
+    <TextView
+        android:text="result"
+        android:layout_width="184dp"
+        android:layout_height="72dp"
+        android:id="@+id/result_test_view"
+        android:layout_rowSpan="3"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MaganSupport</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="spinner_head_han_list">
+        <item>0符</item>
+        <item>2符</item>
+    </string-array>
+    <string-array name="spinner_mentsu_han_list">
+        <item>0符</item>
+        <item>2符</item>
+        <item>4符</item>
+        <item>8符</item>
+        <item>16符</item>
+        <item>32符</item>
+    </string-array>
+</resources>
